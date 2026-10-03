@@ -4,12 +4,9 @@
 
 **Grupo:** ___ (preencher)
 
-| Integrante | RM | Turma |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| Daniel Castro Sanches | RM563333 | 2CCPX |
+| Maria Eduarda de Áquila Amaral | RM563783 | 2CCPX |
+| Matheus Vilela Silveira | RM564989 | 2CCPX |
 
 | Campo | |
 |---|---|
@@ -84,9 +81,3 @@ O `GeradorProtocolo` garante uma única instância (construtor privado, `getInst
 Dos 6 testes novos, 4 ficaram vermelhos (bug02, bug03, bug10 e bug11) e 2 ficaram verdes de cara (preço fixo da consulta e concluir atendimento cancelado). Vale manter os verdes: eles documentam o contrato e protegem contra regressão, e rodam em milissegundos. Num projeto real com prazo, eu priorizaria o caminho feliz das regras de negócio principais (preço, pontos, agendamento) e os caminhos de erro que têm impacto financeiro ou de dados (conflito de horário, transições de status inválidas, data no passado). Perseguir 100% de cobertura tem retorno decrescente: getters e setters, por exemplo, dão pouco valor.
 
 ---
-
-## Parte 5 — Espaço livre (opcional)
-
-```
-A suíte entregue (20 testes) ficou intacta; os 6 testes novos estão em classes novas.
-```
