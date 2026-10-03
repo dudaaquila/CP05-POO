@@ -23,7 +23,7 @@ public class AtendimentoController {
     @Autowired
     private AgendaService service;
 
-    // POST /api/atendimentos?tutorNome=Ana - Agendar atendimento
+    // POST /api/atendimentos - Agendar atendimento
     // Ex.: POST "/api/atendimentos?tipo=BANHO&petNome=Rex&porte=PEQUENO&tutorNome=Ana&dataHora=2026-10-01T10:00"
     @PostMapping
     public ResponseEntity<Atendimento> agendar(
@@ -101,13 +101,5 @@ public class AtendimentoController {
         } catch (StatusInvalidoException e) {
             return ResponseEntity.status(409).build();
         }
-    }
-
-    // -----------------------------------------------------------------
-    // Fidelidade (futuro) - implementar quando o time aprovar:
-    // - desconto de 10% para tutores com mais de 500 pontos
-    // - dobro de pontos em novembro amarelo (castracao)
-    private double calcularDescontoFidelidade(int pontos) {
-        return pontos * 0.1;
     }
 }
