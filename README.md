@@ -2,7 +2,7 @@
 
 ## Identificação
 
-**Grupo:** ___ (preencher)
+**Grupo:** GS
 
 | Daniel Castro Sanches | RM563333 | 2CCPX |
 | Maria Eduarda de Áquila Amaral | RM563783 | 2CCPX |
