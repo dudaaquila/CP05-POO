@@ -15,6 +15,10 @@ public abstract class Atendimento {
     public static final String STATUS_CONCLUIDO = "CONCLUIDO";
     public static final String STATUS_CANCELADO = "CANCELADO";
 
+    public static final String PORTE_PEQUENO = "PEQUENO";
+    public static final String PORTE_MEDIO = "MEDIO";
+    public static final int DURACAO_PADRAO_MINUTOS = 30;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -53,7 +57,7 @@ public abstract class Atendimento {
 
     // duracao media em minutos; subclasses mais demoradas sobrescrevem
     public int getDuracaoMinutos() {
-        return 30;
+        return DURACAO_PADRAO_MINUTOS;
     }
 
     // Conclui o atendimento (so pode em AGENDADO)
